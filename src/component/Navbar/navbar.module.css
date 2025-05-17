@@ -1,0 +1,65 @@
+.navbar {
+  width: 100%;
+  padding: 20px 34px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  position: fixed;
+  color: #e5e5e5;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7)10%, transparent);
+  z-index: 1;
+}
+/* navbar left styling */
+.navbar_left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.navbar_left img {
+  width: 90px;
+}
+.navbar_left ul {
+  display: flex;
+  gap: 20px;
+}
+.navbar_left ul li {
+  list-style: none;
+  cursor: pointer;
+}
+/* navbar righr side styling */
+.navbar_right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.navbar_right_profile {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+}
+.navbar_right svg {
+  cursor: pointer;
+  color: white;
+}
+
+.navbar .dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: max-content;
+  background-color: #191919;
+  padding: 18px 22px;
+  border-radius: 2px;
+  text-decoration: underline;
+  z-index: 1;
+  display: none;
+}
+.navbar .dropdown p {
+  font-size: 12px;
+  cursor: pointer;
+}
+.navbar_right_profile:hover .dropdown{
+  display: block;
+}
