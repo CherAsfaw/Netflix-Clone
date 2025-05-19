@@ -23,43 +23,32 @@ function Footer() {
             <XIcon />
           </div>
         </div>
-        <div>
-          <div className={footerStyle.list_wrapper}>
+        <div className={footerStyle.footer_list}> 
             <ul>
               <li>Audio Description</li>
               <li>Investor Relations</li>
               <li>Legal Notice</li>
             </ul>
-          </div>
-
-          <div className={footerStyle.list_wrapper}>
             <ul>
               <li>Help Center</li>
               <li>Investor Relations</li>
               <li>Cookie Preferences</li>
-            </ul>
-          </div>
-
-          <div className={footerStyle.list_wrapper}>
+            </ul>        
             <ul>
               <li>Gift Cards</li>
               <li>Terms of Use</li>
               <li>Corporate Information</li>
-            </ul>
-          </div>
-
-          <div className={footerStyle.list_wrapper}>
+            </ul>        
             <ul>
               <li>Media Center</li>
               <li>Privacy</li>
               <li>Contact Center</li>
             </ul>
           </div>
-        </div>
       </div>
-      <div className={footerStyle.div_container}>
-        <p className="ms-5 px-2">Service Code</p>
-        <div className="ms-5">&copy; 1997-2025 Netflix, Inc</div>
+      <div className={footerStyle.footer_footer}>
+        <p>Service Code</p>
+        <div>&copy; 1997-2025 Netflix, Inc</div>
       </div>
     </>
   );
