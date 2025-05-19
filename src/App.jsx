@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './component/pages/Home/Home'
 
+
 const App = () => {
   return (
     <div>

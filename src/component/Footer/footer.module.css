@@ -1,0 +1,39 @@
+
+.footer {
+  padding: 30ox 4%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer_icon {
+  display: flex;
+  gap: 20px;
+}
+.footer_icon svg {
+  color: white;
+  width: 30px;
+}
+.list_wrapper ul, li {
+  list-style-type: none;
+  font-size: 12px;
+  padding: 0;
+  color: #b4b1b1;
+  margin-top: 8px;
+  margin-left: 28px;
+ }
+ .div_container, p {
+  margin-left: 228px;
+  color: #b4b1b1;
+  font-size: 12px;
+  padding-bottom: 0;
+  margin-top: 0;
+ 
+ }
+ .div_container p {
+   border: 1px #fff solid;
+   width: 90px;
+ }
+ 
+ 
+ 
+ 
+ 

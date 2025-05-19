@@ -1,0 +1,34 @@
+.titleCards {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.titleCards h2 {
+  margin-bottom: 8px;
+}
+.card_list {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+.card_list::-webkit-scrollbar {
+  display: none;
+}
+.card_list img {
+  width: 240px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.card_poster {
+  max-height: 100px;
+  transition: transform 450ms;
+  margin-right: 10px;
+ }
+ .card_poster:hover {
+   transform: scale(1.08);
+ }
+ .card_poster_large{
+   max-height: 250px;
+ }
+ .card_poster_large:hover {
+   transform: scale(1.09);
+ }

@@ -11,7 +11,9 @@ const Navbar = () => {
     <div className={navbarStyle.navbar}>
       {/* left side navbar */}
       <div className={navbarStyle.navbar_left}>
-        <img src={logo} alt="Netflix logo" />
+        <a href="/">
+          <img src={logo} alt="Netflix logo" />
+        </a>
         <ul>
           <li>Home</li>
           <li>TV Shows</li>
@@ -26,7 +28,7 @@ const Navbar = () => {
         <span>
           <BsSearch size={25} />
         </span>
-        <p>Childern</p>
+        
         <span>
           <IoIosNotificationsOutline size={25} />
         </span>
