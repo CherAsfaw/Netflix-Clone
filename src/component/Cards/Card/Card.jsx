@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import axios from "../../api/axios";
-import cardStyle from './card.module.css'
-import movieTrailer from 'movie-trailer'
-import YouTube from 'react-youtube'
+import React, { useEffect, useState } from "react";
+import axios from "../../Util/axios";
+import cardStyle from "./card.module.css";
+import movieTrailer from "movie-trailer";
+import YouTube from "react-youtube";
 
-
-const Card = ({title, fetchUrl, isLargeCard}) => {
+const Card = ({ title, fetchUrl, isLargeCard }) => {
   const [movies, setMovies] = useState([]);
-  const [trailerUrl, setTrailerUrl] = useState("")
+  const [trailerUrl, setTrailerUrl] = useState("");
   const base_url = "https://image.tmdb.org/t/p/original";
   useEffect(() => {
     (async () => {
@@ -24,7 +23,7 @@ const Card = ({title, fetchUrl, isLargeCard}) => {
 
   const handleClick = (movie) => {
     if (trailerUrl) {
-      setTrailerUrl("")
+      setTrailerUrl("");
     } else {
       movieTrailer(movie?.title || movie?.name || movie?.original_name)
         .then((url) => {
@@ -36,7 +35,7 @@ const Card = ({title, fetchUrl, isLargeCard}) => {
         })
         .catch((error) => console.error("Trailer not found:", error));
     }
-  }
+  };
   const opts = {
     height: "390",
     width: "640",
@@ -54,18 +53,20 @@ const Card = ({title, fetchUrl, isLargeCard}) => {
             onClick={() => handleClick(movie)}
             key={i}
             src={`${base_url}${
-              isLargeCard?movie.poster_path : movie.backdrop_path
+              isLargeCard ? movie.poster_path : movie.backdrop_path
             }`}
-            alt={movie.name} className={`${cardStyle.card_poster} ${isLargeCard ? cardStyle.card_poster_large : ''}`}
+            alt={movie.name}
+            className={`${cardStyle.card_poster} ${
+              isLargeCard ? cardStyle.card_poster_large : ""
+            }`}
           />
-          
         ))}
       </div>
-      <div style={{padding: '48px'}}>
+      <div style={{ padding: "48px" }}>
         {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
       </div>
     </>
   );
-}
+};
 
-export default Card
+export default Card;
