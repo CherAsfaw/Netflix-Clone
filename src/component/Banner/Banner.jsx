@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import homeStyle from './home.module.css'
 import { FaPlay } from "react-icons/fa";
 import { ImInfo } from "react-icons/im";
-import axios from '../api/axios'
-import requests from '../api/requests'
+import axios from '../api/axios.jsx'
+import requests from '../api/requests.jsx'
 import movieTrailer from "movie-trailer";
 import YouTube from "react-youtube";
 
